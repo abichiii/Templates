@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://developer.mozilla.org/static/img/favicon144.png">
+    <!-- iPhone avec haute-résolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://developer.mozilla.org/static/img/favicon114.png">
+    <!-- iPad de première et deuxième génération : -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://developer.mozilla.org/static/img/favicon72.png">
+    <!-- iPhone non-Retina, iPod Touch et appareils Android 2.1+: -->
+    <link rel="apple-touch-icon-precomposed" href="https://developer.mozilla.org/static/img/favicon57.png">
+    <!-- favicône de base -->
+    <link rel="shortcut icon" href="https://developer.mozilla.org/static/img/favicon32.png">
+        <meta name="author" content="YAMOHA Jonas">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Stats Clash Royale</title>
+    </head>
+<body>
+    
+    <header>
+
+        <nav>
+            <div class="nom-img-logo">
+                <a href="accueil.html">
+                    <img src="images/logo-bf.png" alt="Logo BlueFire">
+                    <p>BlueFire</p>
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="accueil.html">ACCUEIL</a>
+                </li>
+                <li>
+                    <a href="ligues.html">LIGUES</a>
+                </li>
+                <li>
+                    <a href="cartes.html">CARTES</a>     
+                </li>
+                <li>
+                    <a href="pro-players.html">PRO PLAYERS</a>    
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <h2>CREER UNE COMPTE CLASH ROYALE</h2>
+
+        <form method="post" action="form.php">
+
+            <fieldset>
+
+                <legend>Informations personnelles :</legend>
+                <div class="">
+                    <label>Nom :
+                        <input type="text" name="nom"  minlength="2" maxlength="25" required>
+                    </label>                  
+                </div>
+
+                <div class="">
+                    <label>Prénom :
+                        <input type="text" name="prenom" minlength="2" maxlength="25" required>
+                    </label> 
+                </div>
+
+                <div class="">
+                    <label>Adresse mail :
+                        <input type="email" name="mail" required>
+                    </label>                   
+                </div>
+
+                <div class="">
+                    <label>Age :
+                        <input type="number" name="age" min="10" max="99">
+                    </label>
+                </div>
+
+
+                <div class="">
+                    <label>Homme
+                        <input type="radio" name="sexe" value="homme">
+                    </label>
+                    
+                    <label>Femme
+                        <input type="radio" name="sexe" value="femme">
+                    </label>
+                    
+                    <label>Je ne sais pas
+                        <input type="radio" name="sexe" value="je ne sais pas">
+                    </label>
+                </div>
+
+                <div class="">
+                    <label>Choisissez un mot de passe :</label>
+                    <input type="password" minlength="8" required>
+                </div>
+
+                <div class="">
+                    <textarea name="exp" placeholder="Envoyer un message" maxlength="500"></textarea>
+                </div>
+
+                <div class="">
+                    <input type="checkbox" id="termes" name="termes" value="termes" required>
+                    <label for="termes">J'accepte les termes et conditions.</label>
+                </div>
+                
+                <div class="">
+                    <input type="submit" value="Login">
+                </div>
+               
+            </fieldset>
+
+        </form>
+
+
+        <h2>CREER UNE COMPTE BLUEFIRE</h2>
+
+        <form method="post" action="form.php">
+
+            <fieldset>
+
+                <legend>Informations personnelles :</legend>
+                <div class="">
+                    <label>ID Clash Royale :
+                        <input type="text" name="id-cr" minlength="10" required>
+                    </label>   
+                </div>
+
+                <div class="">
+                    <label>Prénom :
+                        <input type="text" name="prenom" minlength="2" maxlength="25" required>
+                    </label>
+                </div>
+
+                <div class="">
+                    <label>Adresse mail :
+                        <input type="email" name="mail" required>
+                    </label>                  
+                </div>
+
+                <div class="">
+                    <label>Age :
+                        <input type="number" id="age" name="age" min="11" max="99">
+                    </label>                  
+                </div>
+
+                <div class="champ">
+                    <label>Homme
+                        <input type="radio"  name="sexe" value="homme">
+                    </label>
+
+                    <label>Femme
+                        <input type="radio" name="sexe" value="femme">
+                    </label>
+
+                    <label>Je ne sais pas
+                        <input type="radio" name="sexe" value="je ne sais pas">
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Badges CR:</legend>
+                <div class="">
+                    <input type="checkbox" id="anciennete" name="badges" value="anciennete">
+                    <label for="anciennete">+5 ans d'ancienneté</label>
+                    <input type="checkbox" id="ladder" name="badges" value="ladder">
+                    <label for="ladder">TOP 500 Ladder</label>
+                    <input type="checkbox" id="tournoi" name="badges" value="tournoi">
+                    <label for="tournoi">TOP 500 Global Tournemment</label>
+                    <input type="checkbox" id="2020" name="badges" value="2020">
+                    <label for="2020">CRL 2020</label>
+                    <input type="checkbox" id="2021" name="badges" value="2021">
+                    <label for="2021">CRL 2021</label>
+                    <input type="checkbox" id="2022" name="badges" value="2022">
+                    <label for="2022">CRL 2022</label>
+                </div>
+
+                <div class="">
+                    <textarea name="exp" placeholder="Décrivez votre expérience pro-player" maxlength="500"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Validation :</legend>
+
+                <div class="">
+                    <label>Choisissez un mot de passe :</label>
+                    <input type="password" minlength="8" required>
+                </div>
+
+                <input type="submit" value="Login">
+            </fieldset>
+        </form>
+
+    </main>
+
+</body>
+</html>
