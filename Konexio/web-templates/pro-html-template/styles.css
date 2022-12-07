@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+
+}
+
+
+/*HEADER*/
+
+.header, header {
+  width: 100%;
+  height: 15vh;
+}
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  font-weight: 700;
+  background-color: #ffF;
+}
+.logo-nav {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nom-img-logo {
+  width: 250px;
+  height: 100%;
+  margin-left: 50px;
+}
+.nom-img-logo a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+#img-logo {
+  width: 60px ;
+  height: 140%;
+  margin-right: 10px;
+}
+#titre-bf {
+  color: #000;
+  width: 150px;
+  height: 20px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+}
+nav ul {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;            
+}
+nav li {
+  margin: 0px 15px;
+  list-style-type: none;
+}
+nav li:hover {
+  border-bottom: 5px solid #4CB;
+  margin-top: 5px;
+}
+li a {
+  color: #000;
+  text-decoration: none;
+}
+.icons {
+  width: 10%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.icons a {
+  height: 25px;           
+}
+.icons img {
+  height: 100%;
+}
+
+/*PARAMETRES COMMUNS DES PAGES*/
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.social-media {
+  top: 300px;
+  border: #000 1px solid;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+i {
+  border: #000 1px solid;
+  color: #fff;
+}
+.pages {
+  z-index: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg,rgb(18, 30, 88), rgb(18, 30, 88), rgb(119, 116, 116),rgb(18, 30, 88),rgb(18, 30, 88));
+}
+.container {
+  width: 70%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #000 solid 1px;
+}
+h2, h3, h4, p {
+  text-align: center;
+}
+.titre-pages {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+}
+.contenu-pages {
+  position: relative;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #000 solid 1px;
+}
+
+/*PAGE HOME*/
+
+.page1-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.page1-home video {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.container-home {
+  align-items: center;
+}
+.contenu-page1-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #000 1px solid;
+  z-index: 1;
+}
+.logo-clash-royale {
+  height: 35%;
+  border: #000 solid 1px;
+}
+.logo-clash-royale img {
+  height: 100%;
+}
+.soustitre-page1-home {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  border: #000 1px solid;
+}
+.boutons {
+  height: 13%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.bouton {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  background-color: #4CB;
+  border-radius: 10px;
+}
+.bouton a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenu-pages video {
+  height: 80%;
+  width: 80%;
+}
+
+
+/*PAGE TOURNAMENT */
+
+.page1-tournament {
+  position: relative;
+  background-image: url('assets/4-cup.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main img {
+  border-radius: 20px;
+}
+.audio {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+.cups {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+}
+.cup {
+  position: relative;
+  width: 10%;
+}
+.cup a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.trophees {
+  display: flex;
+}
+.extremites {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: #000 solid 1px;
+}
+.extremites figure {
+  height: 35%;
+  width: 60%;
+  border: #000 1px solid;
+}
+.extremites img {
+  width: 100%;
+  height: 100%;
+}
+.centre {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #000 solid 1px;
+}
+.page6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.contenu-page6 {
+  width:80%;
+  height:50%;
+  border: #000 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+.fonds-personalises, .description-rewards {
+  width: 45%;
+  border: #000 1px solid;
+}
+.fonds-personalises {
+  display: flex;
+  justify-content: space-between;
+}
+.description-rewards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cadre-fonds {
+  width: 30%;
+}
+.img-fonds {
+  width: 100%;
+  height: 100%;
+}
+.page7 {
+  display: flex;
+  flex-direction: column;
+}
+.titre-listes {
+  height: 10%;
+} 
+.contenu-listes {
+  height: 90%;
+  display: flex;
+}
+
+
+/*PAGE SHOP */
+
+.page1-shop {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.page1-shop video {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.titre-page-shop {
+  font-size: 40px; 
+}
+
+
+
+/*PAGE TABLEAUX*/
+
+table {
+  margin-top: 50px;
+}
+table, td, th  {
+  text-align: center;
+  border: medium solid #000;
+  border-collapse: collapse;
+  background-color: gray;         
+}
+td {
+  width: 100px;
+}
+tr {
+  height: 50px;
+}
+
+
+
+footer {
+  height: 30vh;
+  background-color: gray;
+}
