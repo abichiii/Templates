@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="core/styles.css">
+    <title>Recettes</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nom-logo">
+            <p>Cuisine</p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+                <li>
+                    <a href="recettes.html">RECETTES</a>     
+                </li>
+                <li>
+                    <a href="inscriptions.html">INSCRIPTIONS</a>    
+                </li>
+                <li>
+                    <a href="chiffres.html">CHIFFRES</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <form method="post" action="form.php">
+        <fieldset>
+            <legend>Informations personnelles :</legend>
+            <div class="">
+                <label for="nom">ID Clash Royale :</label>
+                <input type="text" id="nom" name="nom" minlength="2" maxlength="25" required>
+            </div>
+            <div class="">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" minlength="2" maxlength="25" required>
+            </div>
+            <div class="">
+                <label for="mail">Adresse mail :</label>
+                <input type="email" id="mail" name="mail" required>
+            </div>
+            <div class="">
+                <label for="age">Age :</label>
+                <input type="number" id="age" name="age" min="16" max="99">
+            </div>
+            <div class="champ">
+                <input type="radio" id="h" name="sexe" value="homme">
+                <label for="h">Homme</label>
+                <input type="radio" id="f" name="sexe" value="femme">
+                <label for="f">Femme</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Badges CR:</legend>
+            <div class="">
+                <input type="checkbox" id="anciennete" name="badges" value="anciennete">
+                <label for="anciennete">+5 ans d'ancienneté</label>
+                <input type="checkbox" id="ladder" name="badges" value="ladder">
+                <label for="ladder">TOP 500 Ladder</label>
+                <input type="checkbox" id="tournoi" name="badges" value="tournoi">
+                <label for="tournoi">TOP 500 Global Tournemment</label>
+                <input type="checkbox" id="2020" name="badges" value="2020">
+                <label for="2020">CRL 2020</label>
+                <input type="checkbox" id="2021" name="badges" value="2021">
+                <label for="2021">CRL 2021</label>
+                <input type="checkbox" id="2022" name="badges" value="2022">
+                <label for="2022">CRL 2022</label>
+            </div>
+            <div class="">
+                <textarea name="badges" placeholder="Décrivez une expérience comme joueur PRO" maxlength="500"></textarea>
+            </div>
+            </fieldset>
+        <fieldset>
+            <legend>Validation :</legend>
+            <div class="">
+                <label for="pass">Choisissez un mot de passe :</label>
+                <input type="password" minlength="8" required>
+            </div>
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+</body>
+</html>
