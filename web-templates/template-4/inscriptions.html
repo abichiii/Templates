@@ -23,20 +23,20 @@
 	<meta name="twitter:creator" content="YAMOHA Jonas">
 	<meta name="twitter:image:src" content="https://search.brave.com/images?q=image+vluefire+logo&img=7">
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/fav-icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/fav-icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/fav-icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/fav-icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/fav-icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/fav-icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/fav-icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/fav-icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/fav-icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/fav-icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/fav-icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/fav-icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/fav-icons/favicon-16x16.png">
+	<link rel="manifest" href="assets/fav-icons/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
@@ -53,7 +53,6 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 	</style>
-
 </head>
 
 <body>
@@ -65,9 +64,9 @@
 				<div class="nom-img-logo">
 					<a href="home.html">
 
-						<img id="img-logo" src="assets/logo-bf.png" alt="">
+						<img id="img-logo" src="assets/images/logo-bf.png" alt="Logo BlueFire">
 
-						<img id="titre-bf" src="assets/titre-bf.png" alt="">
+						<img id="titre-bf" src="assets/images/titre-bf.png" alt="Titre BlueFire">
 
 					</a>
 				</div>
@@ -93,11 +92,11 @@
 					<div class="icons">
 
 						<a href="">
-							<img src="assets/icon-loupe.png" alt="Icone d'une loupe">
+							<img src="assets/images/icon-loupe.png" alt="Icone d'une loupe">
 						</a>
 
 						<a href="shop.html">
-							<img src="assets/icon-chariot-1.png" alt="Icone d'un chariot">
+							<img src="assets/images/icon-chariot-1.png" alt="Icone d'un chariot">
 						</a>
 
 					</div>
@@ -120,19 +119,21 @@
 
 	<main>
 
-		<h2>CREER UNE COMPTE BLUEFIRE</h2>
+		<div class="pages">
+
+			<h2>SIGN UP</h2>
 
 		<form method="post" action="form.php">
 
 			<fieldset>
 
-				<legend>Informations personnelles :</legend>
+				<legend>Personal Information :</legend>
 
 
 				<div class="">
 
 					<label>ID Clash Royale :
-						<input type="text" name="id-cr" minlength="10" required>
+						<input type="text" name="id-cr" minlength="10" maxlength="10" required>
 
 					</label>
 
@@ -141,9 +142,9 @@
 
 				<div class="">
 
-					<label>Prénom :
+					<label>Nickname :
 
-						<input type="text" name="prenom" minlength="2" maxlength="25" required>
+						<input type="text" name="nickname" minlength="1" maxlength="15" required>
 
 					</label>
 
@@ -152,9 +153,9 @@
 
 				<div class="">
 
-					<label>Adresse mail :
+					<label>Email :
 
-						<input type="email" name="mail" required>
+						<input type="email" name="email" required>
 
 					</label>
 
@@ -172,28 +173,24 @@
 				</div>
 
 
-				<div class="champ">
+				<div class="">
 
-					<label>Homme
-						<input type="radio" name="sexe" value="homme">
-					</label>
-
-
-					<label>Femme
-						<input type="radio" name="sexe" value="femme">
-					</label>
+					<input type="radio" id="men" name="gender" value="men">
+					<label for="men">Men</label>
 
 
-					<label>Je ne sais pas
-						<input type="radio" name="sexe" value="je ne sais pas">
-					</label>
+					<input type="radio" id="women" name="gender" value="women">
+					<label for="women">Women</label>
+
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label>
 
 				</div>
 
 
 				<div class="">
 
-					<label>Choisissez un mot de passe :</label>
+					<label>Password:</label>
 
 					<input type="password" minlength="8" required>
 
@@ -236,7 +233,7 @@
 
 
 				<div class="">
-					<textarea name="exp" placeholder="Décrivez votre expérience pro-player" maxlength="500"></textarea>
+					<textarea name="exp" placeholder="Describe your experience like pro-player" maxlength="500"></textarea>
 				</div>
 
 			</fieldset>
@@ -249,7 +246,7 @@
 
 				<div class="">
 					<input type="checkbox" id="termes" required>
-					<label for="termes">J'accepte les termes et conditions</label>
+					<label for="termes">I accept termes and conditions</label>
 				</div>
 
 
@@ -260,19 +257,19 @@
 		</form>
 
 
-		<h2>CREER UNE COMPTE BLUEFIRE</h2>
+		<h2>PAYMENT</h2>
 
 		<form method="post" action="form.php">
 
 			<fieldset>
 
-				<legend>Informations personnelles :</legend>
+				<legend>Your détails </legend>
 
 
 				<div class="">
 
-					<label>ID Clash Royale :
-						<input type="text" name="id-cr" minlength="10" required>
+					<label>Full Name 
+						<input type="text" name="full-name" minlength="4" required>
 
 					</label>
 
@@ -281,18 +278,7 @@
 
 				<div class="">
 
-					<label>Prénom :
-
-						<input type="text" name="prenom" minlength="2" maxlength="25" required>
-
-					</label>
-
-				</div>
-
-
-				<div class="">
-
-					<label>Adresse mail :
+					<label>Email
 
 						<input type="email" name="mail" required>
 
@@ -303,29 +289,39 @@
 
 				<div class="">
 
-					<label>Age :
+					<label>Contact number (optional)
 
-						<input type="number" id="age" name="age" min="11" max="99">
+						<input type="number" name="number" minlength="9" maxlength="10">
 
 					</label>
 
 				</div>
 
 
-				<div class="champ">
-
-					<label>Homme
-						<input type="radio" name="sexe" value="homme">
-					</label>
+			</fieldset>
 
 
-					<label>Femme
-						<input type="radio" name="sexe" value="femme">
-					</label>
+			<fieldset>
+
+				<legend>Payment Détails </legend>
 
 
-					<label>Je ne sais pas
-						<input type="radio" name="sexe" value="je ne sais pas">
+				<div class="cards">
+
+					<input type="radio" id="visa-mastercard" name="visa-mastercard" value="visa-mastercard">
+					<label for="visa-mastercard">Visa - MasterCard</label>
+					
+
+					<input type="radio" id="paypal" name="paypal" value="paypal">
+					<label for="paypal">Paypal</label>
+					
+				</div>
+				
+
+				<div class="">
+
+					<label>Name on card 
+						<input type="text" name="name-on-card" minlength="4" required>
 					</label>
 
 				</div>
@@ -333,9 +329,21 @@
 
 				<div class="">
 
-					<label>Choisissez un mot de passe :</label>
+					<label>Card number
+						<input type="number" name="card-number" minlength="16" required>
+					</label>
 
-					<input type="password" minlength="8" required>
+				</div>
+
+				<div class="">
+
+					<label>Expiry
+						<input type="date" name="expiry" minlength="5" required>
+					</label>	
+
+					<label>CSV
+						<input type="number" name="csv" minlength="3" required>
+					</label>	
 
 				</div>
 
@@ -344,60 +352,73 @@
 
 			<fieldset>
 
-				<legend>Badges :</legend>
-
-
-				<div class="">
-
-					<input type="checkbox" id="ladder" name="badges" value="ladder">
-					<label for="ladder">TOP 500 Ladder</label>
-
-
-					<input type="checkbox" id="2018" name="badges" value="2018">
-					<label for="2018">CRL 2018</label>
-
-
-					<input type="checkbox" id="2019" name="badges" value="2019">
-					<label for="2019">CRL 2019</label>
-
-
-					<input type="checkbox" id="2020" name="badges" value="2020">
-					<label for="2020">CRL 2020</label>
-
-
-					<input type="checkbox" id="2021" name="badges" value="2021">
-					<label for="2021">CRL 2021</label>
-
-
-					<input type="checkbox" id="2022" name="badges" value="2022">
-					<label for="2022">CRL 2022</label>
-
-				</div>
-
+				<legend>Billing address </legend>
 
 				<div class="">
-					<textarea name="exp" placeholder="Décrivez votre expérience pro-player" maxlength="500"></textarea>
+					<label>Address
+						<input type="text" name="address" required>
+					</label>
 				</div>
+				<div class="">
+					<label>Supplemental address
+						<input type="text" name="supplemental-address" required>
+					</label>
+				</div>
+				<div class="">
+					<label>City
+						<input type="text" name="city" required>
+					</label>
+				</div>
+				<div class="">
+					<label>Department
+						<input type="text" name="department" required>
+					</label>
+				</div>
+				<div class="">
+					<label>Postal Code
+						<input type="text" name="postal-code" required>
+					</label>
+				</div>
+				<div class="">
+					<label for="Country"></label>
+				<select name="country" id="country" required>
 
+					<optgroup label="Europe">
+						<option value="france">France</option>
+						<option value="belgique">Belgique</option>
+						<option value="suisse">Suisse</option>
+					</optgroup>
+
+					<optgroup label="Afrique">
+						<option value="algerie">Algerie</option>
+						<option value="tunisie">Tunisie</option>
+						<option value="maroc">Maroc</option>
+						<option value="egypt">egypt</option>
+					</optgroup>
+
+					<optgroup label="Sud-Amerique">
+						<option value="argentine">Argentine</option>
+						<option value="perou">Pérou</option>
+						<option value="colombie">Colombie</option>
+					</optgroup>
+
+					<optgroup label="Nord-Amerique">
+						<option value="canada">Canada</option>
+						<option value="united-states">United-States</option>
+						<option value="mexico">Mexico</option>
+					</optgroup>
+
+				</select>
+				</div>
+				
 			</fieldset>
 
-
-			<fieldset>
-
-				<legend>Validation :</legend>
-
-
-				<div class="">
-					<input type="checkbox" id="termes" required>
-					<label for="termes">J'accepte les termes et conditions</label>
-				</div>
-
-
-				<input type="submit" value="Register">
-
-			</fieldset>
+			<input type="submit" value="Buy">
 
 		</form>
+		
+		</div>
+		
 
 	</main>
 
