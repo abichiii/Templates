@@ -90,30 +90,29 @@ li a {
   height: 100%;
 }
 
+
 /*PARAMETRES COMMUNS DES PAGES*/
 
-a {
-  text-decoration: none;
-  color: #000;
-}
+
 .social-media {
   top: 300px;
-  border: #000 1px solid;
   position: fixed;
   z-index: 1;
   display: flex;
   flex-direction: column;
 }
 i {
-  border: #000 1px solid;
   color: #fff;
 }
 .pages {
   z-index: 0;
   display: flex;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(90deg,rgb(18, 30, 88), rgb(18, 30, 88), rgb(119, 116, 116),rgb(18, 30, 88),rgb(18, 30, 88));
+  height: 100vh;  
+  background-image: url('../assets/images/fondo-cr-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
 }
 .container {
   width: 70%;
@@ -121,7 +120,6 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: #000 solid 1px;
 }
 h2, h3, h4, p {
   text-align: center;
@@ -140,7 +138,24 @@ h2, h3, h4, p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: #000 solid 1px;
+}
+.bouton {
+  position: relative;
+  background-color: #4CB;
+  border-radius: 10px;
+}
+.bouton a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.pages a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*PAGE HOME*/
@@ -164,22 +179,13 @@ h2, h3, h4, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: #000 1px solid;
   z-index: 1;
 }
 .logo-clash-royale {
   height: 35%;
-  border: #000 solid 1px;
 }
 .logo-clash-royale img {
   height: 100%;
-}
-.soustitre-page1-home {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  color: #fff;
-  border: #000 1px solid;
 }
 .boutons {
   height: 13%;
@@ -188,19 +194,8 @@ h2, h3, h4, p {
   justify-content: space-between;
 }
 .bouton {
-  position: relative;
   height: 100%;
   width: 40%;
-  background-color: #4CB;
-  border-radius: 10px;
-}
-.bouton a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .contenu-pages video {
   height: 80%;
@@ -212,7 +207,7 @@ h2, h3, h4, p {
 
 .page1-tournament {
   position: relative;
-  background-image: url('assets/4-cup.jpg');
+  background-image: url('../assets/images/4-cup.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;    
   display: flex;
@@ -251,12 +246,11 @@ main img {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: #000 solid 1px;
 }
 .extremites figure {
+  text-align: center;
   height: 35%;
   width: 60%;
-  border: #000 1px solid;
 }
 .extremites img {
   width: 100%;
@@ -268,7 +262,6 @@ main img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: #000 solid 1px;
 }
 .page6 {
   display: flex;
@@ -279,13 +272,11 @@ main img {
 .contenu-page6 {
   width:80%;
   height:50%;
-  border: #000 1px solid;
   display: flex;
   justify-content: space-between;
 }
 .fonds-personalises, .description-rewards {
   width: 45%;
-  border: #000 1px solid;
 }
 .fonds-personalises {
   display: flex;
@@ -321,7 +312,6 @@ main img {
 
 .page1-shop {
   position: relative;
-  display: flex;
   justify-content: center;
   align-items:center;
 }
@@ -332,14 +322,78 @@ main img {
   width: 100%;
   z-index: 0;
 }
-.titre-page-shop {
-  font-size: 40px; 
+.contenu-page1-shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+}
+.bouton-shop {
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #4CB;
+  z-index: 1;
+  
+}
+.page2-shop {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.page2-shop video {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.container-page2-shop {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 90%;
+  z-index: 1;
+}
+.maillots {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.maillots figure {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maillots a {
+  width: 100%;
+  height: 90%;
+}
+.maillots img{
+  width: 100%;
+  height: 100%;
+}
+figcaption {
+  color: #fff;
 }
 
 
 
 /*PAGE TABLEAUX*/
 
+.contenu-tableaux {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 table {
   margin-top: 50px;
 }
@@ -356,6 +410,11 @@ tr {
   height: 50px;
 }
 
+/*FORMULAIRE*/
+
+form {
+  width: 90%
+}
 
 
 footer {
