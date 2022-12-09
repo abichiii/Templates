@@ -103,6 +103,13 @@
 
 				</nav>
 
+				<svg class="burger" id="burger" width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+					<g fill="#00001A" fill-rule="evenodd">
+						<path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+						<path d="M0 0h40v3H0z" />
+					</g>
+				</svg>
+
 			</div>
 		</header>
 	</div>
@@ -150,6 +157,18 @@
 							font-weight: 700;
 							color: brown;
 						}
+
+						@media screen and (min-width: 1600px) {
+							.sous-titre-page1-home p {
+								font-size: 40px;
+							}
+						}
+
+						@media screen and (max-width: 480px) {
+							.sous-titre-page1-home p {
+								font-size: 20px;
+							}
+						}
 					</style>
 
 					<p>With the best Clash Royale team !</p>
@@ -185,6 +204,24 @@
 					<a href="inscriptions.html">Are you new? Create your BlueFire Account</a>
 				</div>
 
+			</div>
+
+			<div class="open" id="navmobile">
+
+				<ul>
+					<li>
+						<a href="home.html">HOME</a>
+					</li>
+					<li>
+						<a href="tournament.html">TOURNAMENT</a>
+					</li>
+					<li>
+						<a href="shop.html">SHOP</a>
+					</li>
+					<li>
+						<a href="inscriptions.html">INSCRIPTIONS</a>
+					</li>
+				</ul>
 
 			</div>
 
@@ -223,7 +260,7 @@
 			</section>
 
 
-			<section class="contenu-pages">
+			<section class="contenu-pages videos-mid">
 
 				<video controls>
 					<source src="assets/videos-audios/mugi.mp4">
@@ -307,7 +344,7 @@
 			</section>
 
 
-			<section class="contenu-pages">
+			<section class="contenu-pages videos-mid">
 
 				<video controls>
 					<source src="assets/videos-audios/momo.mp4">
@@ -380,7 +417,7 @@
 			</section>
 
 
-			<section class="contenu-pages">
+			<section class="contenu-pages videos-mid">
 
 				<video controls>
 					<source src="assets/videos-audios/momo-vs-basotto.mp4">
@@ -421,8 +458,9 @@
 
 
 	<footer>
+		<p>Copyright 2022 Jairo YACTAYO YAMOHA - Toute reproduction interdite</p>
 	</footer>
-
+	<script src="core/main.js"></script>
 </body>
 
 </html>

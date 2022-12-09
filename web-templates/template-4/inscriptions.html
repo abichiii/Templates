@@ -103,6 +103,13 @@
 
 				</nav>
 
+				<svg class="burger" id="burger" width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+					<g fill="#00001A" fill-rule="evenodd">
+						<path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+						<path d="M0 0h40v3H0z" />
+					</g>
+				</svg>
+
 			</div>
 		</header>
 	</div>
@@ -119,311 +126,344 @@
 
 	<main>
 
-		<div class="pages">
+		<div class="pages page1 page1-form">
 
-			<h2>SIGN UP</h2>
+			<div class="container-form">
 
-		<form method="post" action="form.php">
+				<div class="form1">
 
-			<fieldset>
-
-				<legend>Personal Information :</legend>
-
-
-				<div class="">
-
-					<label>ID Clash Royale :
-						<input type="text" name="id-cr" minlength="10" maxlength="10" required>
-
-					</label>
-
+					<h2>SIGN UP</h2>
+	
+					<form method="post" action="form.php">
+	
+						<fieldset>
+	
+							<legend>Personal Information :</legend>
+	
+	
+							<div class="">
+	
+								<label>ID Clash Royale :
+									<input type="text" name="id-cr" minlength="10" maxlength="10" required>
+	
+								</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Nickname :
+	
+									<input type="text" name="nickname" minlength="1" maxlength="15" required>
+	
+								</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Email :
+	
+									<input type="email" name="email" required>
+	
+								</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Age :
+	
+									<input type="number" id="age" name="age" min="11" max="99">
+	
+								</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<input type="radio" id="men" name="gender" value="men">
+								<label for="men">Men</label>
+	
+	
+								<input type="radio" id="women" name="gender" value="women">
+								<label for="women">Women</label>
+	
+								<input type="radio" id="other" name="gender" value="other">
+								<label for="other">Other</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Password:</label>
+	
+								<input type="password" minlength="8" required>
+	
+							</div>
+	
+						</fieldset>
+	
+	
+						<fieldset>
+	
+							<legend>Badges :</legend>
+	
+	
+							<div class="">
+	
+								<input type="checkbox" id="ladder" name="badges" value="ladder">
+								<label for="ladder">TOP 500 Ladder</label>
+	
+	
+								<input type="checkbox" id="2018" name="badges" value="2018">
+								<label for="2018">CRL 2018</label>
+	
+	
+								<input type="checkbox" id="2019" name="badges" value="2019">
+								<label for="2019">CRL 2019</label>
+	
+	
+								<input type="checkbox" id="2020" name="badges" value="2020">
+								<label for="2020">CRL 2020</label>
+	
+	
+								<input type="checkbox" id="2021" name="badges" value="2021">
+								<label for="2021">CRL 2021</label>
+	
+	
+								<input type="checkbox" id="2022" name="badges" value="2022">
+								<label for="2022">CRL 2022</label>
+	
+							</div>
+	
+	
+							<div class="">
+								<textarea name="exp" placeholder="Describe your experience like pro-player" maxlength="500"></textarea>
+							</div>
+	
+						</fieldset>
+	
+	
+						<fieldset>
+	
+							<legend>Validation :</legend>
+	
+	
+							<div class="">
+								<input type="checkbox" id="termes" required>
+								<label for="termes">I accept termes and conditions</label>
+							</div>
+	
+	
+							<input type="submit" value="Register">
+	
+						</fieldset>
+	
+					</form>
+	
+				</div>
+	
+				<div class="form2">
+	
+					<h2>PAYMENT</h2>
+	
+					<form method="post" action="form.php">
+	
+						<fieldset>
+	
+							<legend>Your détails </legend>
+	
+	
+							<div class="">
+	
+								<label>Full Name
+									<input type="text" name="full-name" minlength="4" required>
+	
+								</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Email
+	
+									<input type="email" name="mail" required>
+	
+								</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Contact number (optional)
+	
+									<input type="number" name="number" minlength="9" maxlength="10">
+	
+								</label>
+	
+							</div>
+	
+	
+						</fieldset>
+	
+	
+						<fieldset>
+	
+							<legend>Payment Détails </legend>
+	
+	
+							<div class="cards">
+	
+								<input type="radio" id="visa-mastercard" name="visa-mastercard" value="visa-mastercard">
+								<label for="visa-mastercard">Visa - MasterCard</label>
+	
+	
+								<input type="radio" id="paypal" name="paypal" value="paypal">
+								<label for="paypal">Paypal</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Name on card
+									<input type="text" name="name-on-card" minlength="4" required>
+								</label>
+	
+							</div>
+	
+	
+							<div class="">
+	
+								<label>Card number
+									<input type="number" name="card-number" minlength="16" required>
+								</label>
+	
+							</div>
+	
+							<div class="">
+	
+								<label>Expiry
+									<input type="date" name="expiry" minlength="5" required>
+								</label>
+	
+								<label>CSV
+									<input type="number" name="csv" minlength="3" required>
+								</label>
+	
+							</div>
+	
+						</fieldset>
+	
+	
+						<fieldset>
+	
+							<legend>Billing address </legend>
+	
+							<div class="">
+								<label>Address
+									<input type="text" name="address" required>
+								</label>
+							</div>
+							<div class="">
+								<label>Supplemental address
+									<input type="text" name="supplemental-address" required>
+								</label>
+							</div>
+							<div class="">
+								<label>City
+									<input type="text" name="city" required>
+								</label>
+							</div>
+							<div class="">
+								<label>Department
+									<input type="text" name="department" required>
+								</label>
+							</div>
+							<div class="">
+								<label>Postal Code
+									<input type="text" name="postal-code" required>
+								</label>
+							</div>
+							<div class="">
+								<label for="Country"></label>
+								<select name="country" id="country" required>
+	
+									<optgroup label="Europe">
+										<option value="france">France</option>
+										<option value="belgique">Belgique</option>
+										<option value="suisse">Suisse</option>
+									</optgroup>
+	
+									<optgroup label="Afrique">
+										<option value="algerie">Algerie</option>
+										<option value="tunisie">Tunisie</option>
+										<option value="maroc">Maroc</option>
+										<option value="egypt">egypt</option>
+									</optgroup>
+	
+									<optgroup label="Sud-Amerique">
+										<option value="argentine">Argentine</option>
+										<option value="perou">Pérou</option>
+										<option value="colombie">Colombie</option>
+									</optgroup>
+	
+									<optgroup label="Nord-Amerique">
+										<option value="canada">Canada</option>
+										<option value="united-states">United-States</option>
+										<option value="mexico">Mexico</option>
+									</optgroup>
+	
+								</select>
+							</div>
+	
+						</fieldset>
+	
+						<input type="submit" value="Buy">
+	
+					</form>
+	
 				</div>
 
-
-				<div class="">
-
-					<label>Nickname :
-
-						<input type="text" name="nickname" minlength="1" maxlength="15" required>
-
-					</label>
-
-				</div>
-
-
-				<div class="">
-
-					<label>Email :
-
-						<input type="email" name="email" required>
-
-					</label>
-
-				</div>
-
-
-				<div class="">
-
-					<label>Age :
-
-						<input type="number" id="age" name="age" min="11" max="99">
-
-					</label>
-
-				</div>
-
-
-				<div class="">
-
-					<input type="radio" id="men" name="gender" value="men">
-					<label for="men">Men</label>
-
-
-					<input type="radio" id="women" name="gender" value="women">
-					<label for="women">Women</label>
-
-					<input type="radio" id="other" name="gender" value="other">
-					<label for="other">Other</label>
-
-				</div>
-
-
-				<div class="">
-
-					<label>Password:</label>
-
-					<input type="password" minlength="8" required>
-
-				</div>
-
-			</fieldset>
-
-
-			<fieldset>
-
-				<legend>Badges :</legend>
-
-
-				<div class="">
-
-					<input type="checkbox" id="ladder" name="badges" value="ladder">
-					<label for="ladder">TOP 500 Ladder</label>
-
-
-					<input type="checkbox" id="2018" name="badges" value="2018">
-					<label for="2018">CRL 2018</label>
-
-
-					<input type="checkbox" id="2019" name="badges" value="2019">
-					<label for="2019">CRL 2019</label>
-
-
-					<input type="checkbox" id="2020" name="badges" value="2020">
-					<label for="2020">CRL 2020</label>
-
-
-					<input type="checkbox" id="2021" name="badges" value="2021">
-					<label for="2021">CRL 2021</label>
-
-
-					<input type="checkbox" id="2022" name="badges" value="2022">
-					<label for="2022">CRL 2022</label>
-
-				</div>
-
-
-				<div class="">
-					<textarea name="exp" placeholder="Describe your experience like pro-player" maxlength="500"></textarea>
-				</div>
-
-			</fieldset>
-
-
-			<fieldset>
-
-				<legend>Validation :</legend>
-
-
-				<div class="">
-					<input type="checkbox" id="termes" required>
-					<label for="termes">I accept termes and conditions</label>
-				</div>
-
-
-				<input type="submit" value="Register">
-
-			</fieldset>
-
-		</form>
-
-
-		<h2>PAYMENT</h2>
-
-		<form method="post" action="form.php">
-
-			<fieldset>
-
-				<legend>Your détails </legend>
-
-
-				<div class="">
-
-					<label>Full Name 
-						<input type="text" name="full-name" minlength="4" required>
-
-					</label>
-
-				</div>
-
-
-				<div class="">
-
-					<label>Email
-
-						<input type="email" name="mail" required>
-
-					</label>
-
-				</div>
-
-
-				<div class="">
-
-					<label>Contact number (optional)
-
-						<input type="number" name="number" minlength="9" maxlength="10">
-
-					</label>
-
-				</div>
-
-
-			</fieldset>
-
-
-			<fieldset>
-
-				<legend>Payment Détails </legend>
-
-
-				<div class="cards">
-
-					<input type="radio" id="visa-mastercard" name="visa-mastercard" value="visa-mastercard">
-					<label for="visa-mastercard">Visa - MasterCard</label>
-					
-
-					<input type="radio" id="paypal" name="paypal" value="paypal">
-					<label for="paypal">Paypal</label>
-					
-				</div>
+			</div>
+
+			<div class="open" id="navmobile">
+
+				<ul>
+					<li>	
+						<a href="home.html">HOME</a>
+					</li>
+					<li>
+						<a href="tournament.html">TOURNAMENT</a>
+					</li>
+					<li>
+						<a href="shop.html">SHOP</a>
+					</li>
+					<li>
+						<a href="inscriptions.html">INSCRIPTIONS</a>
+					</li>
+				</ul>
 				
+			</div>
 
-				<div class="">
-
-					<label>Name on card 
-						<input type="text" name="name-on-card" minlength="4" required>
-					</label>
-
-				</div>
-
-
-				<div class="">
-
-					<label>Card number
-						<input type="number" name="card-number" minlength="16" required>
-					</label>
-
-				</div>
-
-				<div class="">
-
-					<label>Expiry
-						<input type="date" name="expiry" minlength="5" required>
-					</label>	
-
-					<label>CSV
-						<input type="number" name="csv" minlength="3" required>
-					</label>	
-
-				</div>
-
-			</fieldset>
-
-
-			<fieldset>
-
-				<legend>Billing address </legend>
-
-				<div class="">
-					<label>Address
-						<input type="text" name="address" required>
-					</label>
-				</div>
-				<div class="">
-					<label>Supplemental address
-						<input type="text" name="supplemental-address" required>
-					</label>
-				</div>
-				<div class="">
-					<label>City
-						<input type="text" name="city" required>
-					</label>
-				</div>
-				<div class="">
-					<label>Department
-						<input type="text" name="department" required>
-					</label>
-				</div>
-				<div class="">
-					<label>Postal Code
-						<input type="text" name="postal-code" required>
-					</label>
-				</div>
-				<div class="">
-					<label for="Country"></label>
-				<select name="country" id="country" required>
-
-					<optgroup label="Europe">
-						<option value="france">France</option>
-						<option value="belgique">Belgique</option>
-						<option value="suisse">Suisse</option>
-					</optgroup>
-
-					<optgroup label="Afrique">
-						<option value="algerie">Algerie</option>
-						<option value="tunisie">Tunisie</option>
-						<option value="maroc">Maroc</option>
-						<option value="egypt">egypt</option>
-					</optgroup>
-
-					<optgroup label="Sud-Amerique">
-						<option value="argentine">Argentine</option>
-						<option value="perou">Pérou</option>
-						<option value="colombie">Colombie</option>
-					</optgroup>
-
-					<optgroup label="Nord-Amerique">
-						<option value="canada">Canada</option>
-						<option value="united-states">United-States</option>
-						<option value="mexico">Mexico</option>
-					</optgroup>
-
-				</select>
-				</div>
-				
-			</fieldset>
-
-			<input type="submit" value="Buy">
-
-		</form>
-		
 		</div>
+
 		
+
+		<script src="core/main.js"></script>
 
 	</main>
 
 	<footer>
-
+		<p>Copyright 2022 Jairo YACTAYO YAMOHA - Toute reproduction interdite</p>
 	</footer>
 
 
